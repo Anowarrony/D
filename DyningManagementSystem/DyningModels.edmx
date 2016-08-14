@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="DyningModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2005" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="DyningModelStoreContainer">
+          <EntitySet Name="Bazar" EntityType="DyningModel.Store.Bazar" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Border" EntityType="DyningModel.Store.Border" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Department" EntityType="DyningModel.Store.Department" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Floor" EntityType="DyningModel.Store.Floor" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Login" EntityType="DyningModel.Store.Login" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Meal" EntityType="DyningModel.Store.Meal" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Room" EntityType="DyningModel.Store.Room" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Session" EntityType="DyningModel.Store.Session" store:Type="Tables" Schema="dbo" />
+        </EntityContainer>
+        <EntityType Name="Bazar">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Date" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Taka" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Border">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Department" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Session" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Room" Type="int" Nullable="false" />
+          <Property Name="Image" Type="image" Nullable="false" />
+          <Property Name="BorderId" Type="varchar" Nullable="false" MaxLength="60" />
+        </EntityType>
+        <EntityType Name="Department">
+          <Key>
+            <PropertyRef Name="DeptId" />
+          </Key>
+          <Property Name="DeptId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Department" Type="nvarchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Floor">
+          <Key>
+            <PropertyRef Name="FloorId" />
+          </Key>
+          <Property Name="FloorId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Floor" Type="nvarchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Login">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="20" />
+          <Property Name="LoginTime" Type="datetime" />
+          <Property Name="password" Type="nvarchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Meal">
+          <Key>
+            <PropertyRef Name="MealId" />
+          </Key>
+          <Property Name="MealId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Meal" Type="float" />
+          <Property Name="Date" Type="nvarchar" MaxLength="50" />
+          <Property Name="Payment" Type="int" />
+          <Property Name="BorderId" Type="varchar" MaxLength="59" />
+        </EntityType>
+        <EntityType Name="Room">
+          <Key>
+            <PropertyRef Name="RoomId" />
+          </Key>
+          <Property Name="RoomId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Room" Type="int" Nullable="false" />
+          <Property Name="FloorId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Session">
+          <Key>
+            <PropertyRef Name="SessionId" />
+          </Key>
+          <Property Name="SessionId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Session" Type="nvarchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="DyningModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="DyningManagementDbContext" p1:LazyLoadingEnabled="true">
+          <EntitySet Name="Bazars" EntityType="DyningModel.Bazar" />
+          <EntitySet Name="Borders" EntityType="DyningModel.Border" />
+          <EntitySet Name="Departments" EntityType="DyningModel.Department" />
+          <EntitySet Name="Floors" EntityType="DyningModel.Floor" />
+          <EntitySet Name="Logins" EntityType="DyningModel.Login" />
+          <EntitySet Name="Meals" EntityType="DyningModel.Meal" />
+          <EntitySet Name="Rooms" EntityType="DyningModel.Room" />
+          <EntitySet Name="Sessions" EntityType="DyningModel.Session" />
+        </EntityContainer>
+        <EntityType Name="Bazar">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Date" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Taka" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Border">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Department" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Session" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Room" Type="Int32" Nullable="false" />
+          <Property Name="Image" Type="Binary" Nullable="false" MaxLength="Max" FixedLength="false" />
+          <Property Name="BorderId" Type="String" Nullable="false" MaxLength="60" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="Department">
+          <Key>
+            <PropertyRef Name="DeptId" />
+          </Key>
+          <Property Name="DeptId" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Department1" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="Floor">
+          <Key>
+            <PropertyRef Name="FloorId" />
+          </Key>
+          <Property Name="FloorId" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Floor1" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="Login">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="name" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="LoginTime" Type="DateTime" Precision="3" />
+          <Property Name="password" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="Meal">
+          <Key>
+            <PropertyRef Name="MealId" />
+          </Key>
+          <Property Name="MealId" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Meal1" Type="Double" />
+          <Property Name="Date" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Payment" Type="Int32" />
+          <Property Name="BorderId" Type="String" MaxLength="59" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="Room">
+          <Key>
+            <PropertyRef Name="RoomId" />
+          </Key>
+          <Property Name="RoomId" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Room1" Type="Int32" Nullable="false" />
+          <Property Name="FloorId" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Session">
+          <Key>
+            <PropertyRef Name="SessionId" />
+          </Key>
+          <Property Name="SessionId" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Session1" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="DyningModelStoreContainer" CdmEntityContainer="DyningManagementDbContext">
+          <EntitySetMapping Name="Bazars">
+            <EntityTypeMapping TypeName="DyningModel.Bazar">
+              <MappingFragment StoreEntitySet="Bazar">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Taka" ColumnName="Taka" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Borders">
+            <EntityTypeMapping TypeName="DyningModel.Border">
+              <MappingFragment StoreEntitySet="Border">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Department" ColumnName="Department" />
+                <ScalarProperty Name="Session" ColumnName="Session" />
+                <ScalarProperty Name="Room" ColumnName="Room" />
+                <ScalarProperty Name="Image" ColumnName="Image" />
+                <ScalarProperty Name="BorderId" ColumnName="BorderId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Departments">
+            <EntityTypeMapping TypeName="DyningModel.Department">
+              <MappingFragment StoreEntitySet="Department">
+                <ScalarProperty Name="DeptId" ColumnName="DeptId" />
+                <ScalarProperty Name="Department1" ColumnName="Department" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Floors">
+            <EntityTypeMapping TypeName="DyningModel.Floor">
+              <MappingFragment StoreEntitySet="Floor">
+                <ScalarProperty Name="FloorId" ColumnName="FloorId" />
+                <ScalarProperty Name="Floor1" ColumnName="Floor" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Logins">
+            <EntityTypeMapping TypeName="DyningModel.Login">
+              <MappingFragment StoreEntitySet="Login">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="LoginTime" ColumnName="LoginTime" />
+                <ScalarProperty Name="password" ColumnName="password" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Meals">
+            <EntityTypeMapping TypeName="DyningModel.Meal">
+              <MappingFragment StoreEntitySet="Meal">
+                <ScalarProperty Name="MealId" ColumnName="MealId" />
+                <ScalarProperty Name="Meal1" ColumnName="Meal" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="Payment" ColumnName="Payment" />
+                <ScalarProperty Name="BorderId" ColumnName="BorderId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Rooms">
+            <EntityTypeMapping TypeName="DyningModel.Room">
+              <MappingFragment StoreEntitySet="Room">
+                <ScalarProperty Name="RoomId" ColumnName="RoomId" />
+                <ScalarProperty Name="Room1" ColumnName="Room" />
+                <ScalarProperty Name="FloorId" ColumnName="FloorId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Sessions">
+            <EntityTypeMapping TypeName="DyningModel.Session">
+              <MappingFragment StoreEntitySet="Session">
+                <ScalarProperty Name="SessionId" ColumnName="SessionId" />
+                <ScalarProperty Name="Session1" ColumnName="Session" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

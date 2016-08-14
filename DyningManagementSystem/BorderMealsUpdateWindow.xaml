@@ -1,0 +1,39 @@
+﻿<Window x:Class="DyningManagementSystem.BorderMealsUpdateWindow" Background="DarkCyan"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="BorderMealsUpdateWindow" Height="537" Width="724">
+    <Grid Margin="96,57,66,83" Background="#fff">
+        <Label Content="Date" Foreground="White" FontSize="21" FontWeight="ExtraBlack" FontFamily="Arial" HorizontalAlignment="Left" Margin="166,102,0,0" VerticalAlignment="Top" Height="48"/>
+        <Label Content="Meal" Foreground="White" FontSize="21" FontWeight="ExtraBlack" FontFamily="Arial"  HorizontalAlignment="Left" Margin="166,191,0,0" VerticalAlignment="Top"/>
+        <Label Content="Payment" Foreground="White" FontSize="21" FontWeight="ExtraBlack" FontFamily="Arial"  HorizontalAlignment="Left" Margin="137,263,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.474,0.231"/>
+        <TextBox HorizontalAlignment="Left" Height="43" Margin="137,148,0,0" Name="UpMealMealTextBox" FontSize="17" FontWeight="ExtraBold" TextWrapping="Wrap"  VerticalAlignment="Top" Width="295"/>
+        <TextBox HorizontalAlignment="Left" Height="43" Margin="137,220,0,0" Name="UpMealPayment" FontSize="17" FontWeight="ExtraBold" TextWrapping="Wrap" VerticalAlignment="Top" Width="295"/>
+        <DatePicker HorizontalAlignment="Left" Margin="137,78,0,0" Name="UpMealDatePicker" FontSize="17" FontWeight="ExtraBlack" VerticalAlignment="Top" Width="295" Height="48"/>
+        <Button  FontSize="19" FontWeight="DemiBold" Name="UpMealButton" HorizontalAlignment="Left" Margin="137,297,0,0" VerticalAlignment="Top" Width="295" Height="58" Click="UpMealButton_Click">
+            <StackPanel>
+                <Image Source="Images/interact.png" Height="59" Margin="190,-2,5,4"></Image>
+                <TextBlock Focusable="True" Foreground="DarkOliveGreen" Text="Update Meal" Margin="-2,-50,5,4" FontSize="25" FontWeight="ExtraBlack" FontFamily="Arial" Width="256" Height="75"></TextBlock>
+            </StackPanel>
+
+        </Button>
+        <GroupBox Header="Update Meals" Foreground="#008B00"  FontFamily="Arial" FontSize="23" Focusable="True" FontStretch="ExtraExpanded" FontWeight="ExtraBold" HorizontalAlignment="Left" Margin="10,10,0,-21" Width="518" Height="378" VerticalAlignment="Top"/>
+        <Button ToolTip="Close" HorizontalAlignment="Left" Height="73" Margin="642,476,-48,-89" VerticalAlignment="Top" Width="83" Click="Button_Click_1">
+            <Button.Template>
+                <ControlTemplate>
+                    <Image Source="Images/delete.png" Margin="26,-15,10,0" RenderTransformOrigin="0.977,0.566"  Width="22"/>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Label Content=""  Name="MealupIdLabel" HorizontalAlignment="Left" Height="40" Margin="51,487,0,-67" VerticalAlignment="Top"/>
+        <Label Content="Label" Name="PidLabel" Visibility="Hidden" HorizontalAlignment="Left" Margin="106,-40,0,0" VerticalAlignment="Top"/>
+        <Label Content="" Name="IdLabel" HorizontalAlignment="Left" Height="22" Margin="166,412,0,-67" VerticalAlignment="Top"/>
+        <Button Name="CloseButton" Click="CloseButton_OnClick" HorizontalAlignment="Left" Height="41" Margin="536,403,-54,-77" VerticalAlignment="Top" Width="72">
+
+            <Button.Template>
+                <ControlTemplate>
+                    <Image Source="Images/delete.png" Margin="26,-15,10,0" RenderTransformOrigin="0.977,0.566"  Width="22"/>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+    </Grid>
+</Window>

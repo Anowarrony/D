@@ -1,0 +1,132 @@
+﻿<Window x:Class="DyningManagementSystem.HomeWindow"  WindowStyle="None"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="HomeWindow" Height="439.328" Width="733.632">
+    <Window.Background>
+        <ImageBrush ImageSource="images\back.jpg" Stretch="Fill" />
+
+    </Window.Background>
+    <Grid Height="504" VerticalAlignment="Top" Margin="0,0,0,-36" >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="353*"/>
+            <ColumnDefinition Width="373*"/>
+        </Grid.ColumnDefinitions>
+        <Grid Margin="10,10,10,0" Grid.ColumnSpan="2"  Height="440" VerticalAlignment="Top">
+            <Label Foreground="DarkSalmon" Content="Welcome to Dining Management System  " FontSize="40" FontFamily="Forte" HorizontalAlignment="Left" Margin="-1,24,-12,0" VerticalAlignment="Top" Width="719" Height="83"/>
+            <Image Stretch="Fill" MouseLeave="BorderAddIconImage_OnMouseLeave"  HorizontalAlignment="Left" Height="125" Margin="48,125,0,0" VerticalAlignment="Top" Width="139" Source="Images/BorderAddIconb.jpg" Name="BorderAddIconImage" MouseEnter="BorderAddIconImage_OnMouseEnter"/>
+            <Border Margin="49,125,512,191" Name="BorderAddIcon" Cursor="Hand" MouseDown="BorderAddIcon_OnMouseDown">
+                <Border.Style>
+                    <Style TargetType="{x:Type Border}" >
+                        <Setter Property="Background" Value="Transparent"/>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#55B9D7FC"></Setter>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Border.Style>
+
+            </Border>
+            <Image Stretch="Fill" HorizontalAlignment="Left" Source="Images/MealAddIcon.jpg"  Height="124" Margin="207,125,0,0" VerticalAlignment="Top" Width="139"/>
+            <Border Cursor="Hand" MouseDown="MealAddIconBorder_OnMouseDown" Margin="209,125,354,191" Name="MealAddIconBorder">
+                <Border.Style>
+                    <Style TargetType="{x:Type Border}" >
+                        <Setter Property="Background" Value="Transparent"/>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#55B9D7FC"></Setter>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Border.Style>
+            </Border>
+            <Image  Source="Images/SessionAddIcon.png" Stretch="Fill" HorizontalAlignment="Left" Height="120" Margin="513,130,0,0" VerticalAlignment="Top" Width="139"/>
+            <Image Stretch="Fill" Source="Images/DepartmentAddIcon.jpg"   HorizontalAlignment="Left" Height="119" Margin="358,130,0,0" VerticalAlignment="Top" Width="139"/>
+            <Border Margin="360,131,203,191" Cursor="Hand" Name="DepartmentAddIconBorder" MouseDown="DepartmentAddIconBorder_OnMouseDown">
+
+                <Border.Style>
+                    <Style TargetType="{x:Type Border}" >
+                        <Setter Property="Background" Value="Transparent"/>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#55B9D7FC"></Setter>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Border.Style>
+            </Border>
+            <Border Margin="513,130,49,190" Cursor="Hand" Name="SessionAddIconBorder" MouseDown="SessionAddIconBorder_OnMouseDown">
+                <Border.Style>
+                    <Style TargetType="{x:Type Border}" >
+                        <Setter Property="Background" Value="Transparent"/>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#55B9D7FC"></Setter>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Border.Style>
+
+            </Border>
+            <Image Source="Images/BazarAddIcon.jpg" Stretch="Fill" HorizontalAlignment="Left" Height="124" Margin="55,269,0,0" VerticalAlignment="Top" Width="139"/>
+            <Border Margin="55,268,512,47" Cursor="Hand" Name="BazarAddIconBorder" MouseDown="BazarAddIconBorder_OnMouseDown">
+                <Border.Style>
+                    <Style TargetType="{x:Type Border}" >
+                        <Setter Property="Background" Value="Transparent"/>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#55B9D7FC"></Setter>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Border.Style>
+
+            </Border>
+            <Image Stretch="Fill" Source="Images/BazarDetailsIcon.png" HorizontalAlignment="Left" Height="139" Margin="213,263,0,0" VerticalAlignment="Top" Width="139"/>
+            <Border Margin="215,263,354,47" Cursor="Hand" MouseDown="BazarDetailsIconBorder_OnMouseDown"  Name="BazarDetailsIconBorder">
+                <Border.Style>
+                    <Style TargetType="{x:Type Border}" >
+                        <Setter Property="Background" Value="Transparent"/>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#55B9D7FC"></Setter>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Border.Style>
+
+            </Border>
+            <Image Stretch="Fill" Source="Images/Meals Details.png" HorizontalAlignment="Left" Height="131" Margin="364,268,0,0" VerticalAlignment="Top" Width="139"/>
+            <Border  Margin="369,268,203,47" Cursor="Hand" Name="MealsDetailsIcon" MouseDown="MealsDetailsIcon_OnMouseDown">
+                <Border.Style>
+                    <Style TargetType="{x:Type Border}" >
+                        <Setter Property="Background" Value="Transparent"/>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#55B9D7FC"></Setter>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Border.Style>
+
+            </Border>
+            <Image HorizontalAlignment="Left" Height="131" Margin="518,268,0,0" VerticalAlignment="Top" Width="139" Stretch="Fill" Source="Images/BordersMealsSearchIcon.jpg"/>
+            <Border Margin="517,268,49,41" Name="BorderMealsSearchBorder" Cursor="Hand" MouseDown="BorderMealsSearchBorder_OnMouseDown">
+
+                <Border.Style>
+                    <Style TargetType="{x:Type Border}" >
+                        <Setter Property="Background" Value="Transparent"/>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#55B9D7FC"></Setter>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Border.Style>
+            </Border>
+            <Image Cursor="Hand" Name="WindowColseIcon" MouseLeave="WindowColseIcon_OnMouseLeave" MouseDown="WindowColseIcon_OnMouseDown" MouseEnter="WindowColseIcon_OnMouseEnter" Source="Images/CloseIcona.png" Stretch="Fill" HorizontalAlignment="Left" Height="40" Margin="656,0,0,400" VerticalAlignment="Bottom" Width="40"/>
+        </Grid>
+
+    </Grid>
+
+</Window>

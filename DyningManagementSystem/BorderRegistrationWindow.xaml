@@ -1,0 +1,68 @@
+﻿<Window x:Class="DyningManagementSystem.BorderRegistrationWindow" Loaded="BorderRegistrationWindow_OnLoaded" WindowStyle="None"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="BorderRegistrationWindow" Height="730.358" Width="804.448">
+    <Window.Background>
+        <ImageBrush ImageSource="images\back.jpg" Stretch="Fill" />
+    </Window.Background>
+    <Grid Margin="0,0,0,25">
+        <TextBox FontSize="17" HorizontalAlignment="Left" KeyUp="RegIdTextBox_OnKeyUp"  x:Name="RegIdTextBox" Height="44" Margin="159,57,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="321"/>
+        <TextBox FontSize="17" KeyUp="RegNameTextBox_OnKeyUp"  HorizontalAlignment="Left"   x:Name="RegNameTextBox" Height="39" Margin="159,139,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="321"/>
+        <ComboBox HorizontalAlignment="Left" FontSize="19" DropDownClosed="RegDeptComboBox_OnDropDownClosed"  x:Name="RegDeptComboBox" Background="LightSalmon" Foreground="Blue"  Margin="159,205,0,0" VerticalAlignment="Top" Width="321" Height="39">
+
+
+            <ComboBox.Resources>
+
+                <SolidColorBrush x:Key="{x:Static SystemColors.WindowBrushKey}" Color="Yellow" />
+                <SolidColorBrush x:Key="{x:Static SystemColors.HighlightBrushKey}" Color="Red" />
+            </ComboBox.Resources>
+        </ComboBox>
+        <ComboBox HorizontalAlignment="Left" DropDownClosed="RegFloorComboBox_OnDropDownClosed"  x:Name="RegFloorComboBox" FontSize="19"  Margin="159,353,0,0" VerticalAlignment="Top" Width="321" Background="LightSalmon" Foreground="Blue" SelectionChanged="RegFloorComboBox_OnSelectionChanged"  Height="38">
+
+
+            <ComboBox.Resources>
+
+                <SolidColorBrush x:Key="{x:Static SystemColors.WindowBrushKey}" Color="Yellow" />
+                <SolidColorBrush x:Key="{x:Static SystemColors.HighlightBrushKey}" Color="Red" />
+            </ComboBox.Resources>
+
+        </ComboBox>
+        <ComboBox HorizontalAlignment="Left" DropDownClosed="RegRoomNoComboBox_OnDropDownClosed"  x:Name="RegRoomNoComboBox" Margin="159,418,0,0" VerticalAlignment="Top" Width="321" Height="38"  Background="LightSalmon" Foreground="Blue" RenderTransformOrigin="0.566,0.46" >
+
+
+            <ComboBox.Resources>
+
+                <SolidColorBrush x:Key="{x:Static SystemColors.WindowBrushKey}" Color="Yellow" />
+                <SolidColorBrush x:Key="{x:Static SystemColors.HighlightBrushKey}" Color="Red" />
+            </ComboBox.Resources>
+        </ComboBox>
+        <Label Foreground="White" FontSize="18" Content="Border ID" HorizontalAlignment="Left" Margin="34,63,0,0" VerticalAlignment="Top" Height="38" Width="112"/>
+        <Label Foreground="White" FontSize="18" Content="Name" HorizontalAlignment="Left" Margin="69,138,0,0" VerticalAlignment="Top" Height="39" Width="68"/>
+        <Label Foreground="White" FontSize="18" Content="Department" HorizontalAlignment="Left" Margin="30,206,0,0" VerticalAlignment="Top" Height="38" Width="124"/>
+        <Label Foreground="White" FontSize="18" Content="Floor No." HorizontalAlignment="Left" Margin="40,353,0,0" VerticalAlignment="Top" Height="38" Width="97"/>
+        <Label Foreground="White" FontSize="18" Content="Room No." HorizontalAlignment="Left" Margin="40,415,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.974,0.538" Height="38" Width="106"/>
+        <Label Foreground="White"  FontSize="18" Content="Session" HorizontalAlignment="Left" Margin="58,274,0,0" VerticalAlignment="Top" Height="39" Width="81"/>
+        <Label Foreground="White" FontSize="18" Content="Image" HorizontalAlignment="Left" Margin="58,514,0,0" VerticalAlignment="Top" Height="37" Width="69"/>
+        <Label  FontSize="20" Foreground="Red" Content="Label" x:Name="ReIdLabel" HorizontalAlignment="Left" Margin="491,62,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.237,-2.462" Height="41" Width="176"/>
+        <Label FontSize="20" Foreground="Red" Content="Label" x:Name="RegNameLabel" HorizontalAlignment="Left" Margin="491,138,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.923" Height="42" Width="176"/>
+        <Label FontSize="20" Content="Label" Foreground="Red" x:Name="RegDeptLabel" HorizontalAlignment="Left" Margin="491,203,0,0" VerticalAlignment="Top" Height="41" Width="176"/>
+        <Label FontSize="20" Foreground="Red" Content="Label na" x:Name="RegFloorLabel" HorizontalAlignment="Left" Margin="491,353,0,0" VerticalAlignment="Top" Height="42" Width="208"/>
+        <Label FontSize="20" Foreground="Red" Content="Label" x:Name="RegRoomLabel" HorizontalAlignment="Left" Margin="491,415,0,0" VerticalAlignment="Top" Height="43" Width="176"/>
+        <Label FontSize="20" Foreground="Red" Content="Label" x:Name="RegSessionLabel" HorizontalAlignment="Left" Margin="491,278,0,0" VerticalAlignment="Top" Height="41" Width="208"/>
+        <Label FontSize="20" Foreground="Red" Content="Label" x:Name="RegImageLabel" HorizontalAlignment="Left" Margin="491,514,0,0" VerticalAlignment="Top" Height="40" Width="176"/>
+        <ComboBox HorizontalAlignment="Left" DropDownClosed="RegSessionComboBox_OnDropDownClosed"  x:Name="RegSessionComboBox" FontSize="19" Margin="159,267,0,380" Width="321"  Background="HotPink" Foreground="Blue" SelectionChanged="RegSessionComboBox_OnSelectionChanged">
+
+            <ComboBox.Resources>
+                <SolidColorBrush x:Key="{x:Static SystemColors.WindowBrushKey}" Color="Yellow" />
+                <SolidColorBrush x:Key="{x:Static SystemColors.HighlightBrushKey}" Color="Red" />
+            </ComboBox.Resources>
+        </ComboBox>
+        <Button Content="Upload Image" FontSize="22" FontWeight="UltraBlack" x:Name="RegImagUploadButton" HorizontalAlignment="Left" Margin="159,498,0,0" VerticalAlignment="Top" Width="321" Click="RegImagUploadButton_OnClick"  Height="56"/>
+        <Button Content="Add Border"   FontSize="20"   x:Name="RegisterButton" HorizontalAlignment="Left" Margin="159,576,0,58" Width="321" Click="RegisterButton_OnClick"  Grid.ColumnSpan="1" Grid.Row="0">
+
+        </Button>
+        <Image  HorizontalAlignment="Left" x:Name="BorderImage" Height="64" Margin="649,187,0,0" VerticalAlignment="Top" Width="124"/>
+        <Image Name="WindowCloseIconImage" MouseDown="WindowCloseIconImage_OnMouseDown" MouseLeave="WindowCloseIconImage_OnMouseLeave" MouseEnter="WindowCloseIconImage_OnMouseEnter" Stretch="Fill" HorizontalAlignment="Left" Height="40" Margin="738,9,0,0" VerticalAlignment="Top" Width="40" Source="Images/CloseIcona.png"/>
+
+    </Grid>
+</Window>

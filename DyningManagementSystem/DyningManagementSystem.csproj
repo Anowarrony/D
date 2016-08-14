@@ -1,0 +1,332 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{05F1038A-5160-4513-8214-1025A4FD4A0E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DyningManagementSystem</RootNamespace>
+    <AssemblyName>DyningManagementSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Bazar.cs">
+      <DependentUpon>DyningModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BazarAddWindow.xaml.cs">
+      <DependentUpon>BazarAddWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BazarUpdateWindow.xaml.cs">
+      <DependentUpon>BazarUpdateWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Border.cs">
+      <DependentUpon>DyningModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BorderMealInformation.cs" />
+    <Compile Include="BorderMealSearchWindow.xaml.cs">
+      <DependentUpon>BorderMealSearchWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BorderMealsUpdateWindow.xaml.cs">
+      <DependentUpon>BorderMealsUpdateWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BorderRegistrationWindow.xaml.cs">
+      <DependentUpon>BorderRegistrationWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Department.cs">
+      <DependentUpon>DyningModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DepartmentAddViewWindow.xaml.cs">
+      <DependentUpon>DepartmentAddViewWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DyningModels.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DyningModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Floor.cs">
+      <DependentUpon>DyningModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HomeWindow.xaml.cs">
+      <DependentUpon>HomeWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <DependentUpon>DyningModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Meal.cs">
+      <DependentUpon>DyningModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MealInformation.cs" />
+    <Compile Include="MealInformationWindow.xaml.cs">
+      <DependentUpon>MealInformationWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Room.cs">
+      <DependentUpon>DyningModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Session.cs">
+      <DependentUpon>DyningModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SessionAddViewWindow.xaml.cs">
+      <DependentUpon>SessionAddViewWindow.xaml</DependentUpon>
+    </Compile>
+    <Page Include="BazarAddWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BazarUpdateWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BorderMealSearchWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BorderMealsUpdateWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BorderRegistrationWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DepartmentAddViewWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="HomeWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LoginWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DyningModels.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DyningModels.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DyningModels.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DyningModels.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="LoginWindow.xaml.cs">
+      <DependentUpon>LoginWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="MealAddWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MealInformationWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SessionAddViewWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MealAddWindow.xaml.cs">
+      <DependentUpon>MealAddWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EntityDeploy Include="DyningModels.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>DyningModels.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="DyningModels.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DyningModels.edmx</DependentUpon>
+      <LastGenOutput>DyningModels.Context.cs</LastGenOutput>
+    </None>
+    <None Include="DyningModels.edmx.diagram">
+      <DependentUpon>DyningModels.edmx</DependentUpon>
+    </None>
+    <None Include="DyningModels.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DyningModels.edmx</DependentUpon>
+      <LastGenOutput>DyningModels.cs</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\1436386527_resultset_last.png" />
+    <Resource Include="Images\1436386564_resultset_first.png" />
+    <Resource Include="Images\1436478790_resultset_previous.png" />
+    <Resource Include="Images\1436478826_resultset_next.png" />
+    <Resource Include="Images\delete.png" />
+    <Resource Include="Images\exclamation_red.png" />
+    <Resource Include="Images\gdm_login_photo.png" />
+    <Resource Include="Images\icon-delete.png" />
+    <Resource Include="Images\icon-edit.png" />
+    <Resource Include="Images\icon_angry.png" />
+    <Resource Include="Images\info.png" />
+    <Resource Include="Images\interact.png" />
+    <Resource Include="Images\large-round-table_gal.jpg" />
+    <Resource Include="Images\link.png" />
+    <Resource Include="Images\list_add.png" />
+    <Resource Include="Images\lockoverlay.png" />
+    <Resource Include="Images\remove.png" />
+    <Resource Include="Images\Search.ico" />
+    <Resource Include="Images\search.png" />
+    <Resource Include="Images\search_white.png" />
+    <Resource Include="Images\signup-icon.png" />
+    <Resource Include="Images\user.ico" />
+    <Resource Include="Images\user_group.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\BorderAddIcona.png" />
+    <Resource Include="Images\BorderAddIconb.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\MealAddIcon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\DepartmentAddIcon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\SessionAddIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\BazarAddIcon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\DetailsIco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\BazarDetailsIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Meals Details.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\BordersMealsSearchIcon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\CloseIcona.png" />
+    <Resource Include="Images\CloseIconb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\te.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\back.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\AddMealIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\BorderRegIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\MealAddIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\AddButtonIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\SearchButtonIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\DetailsButtonIcon.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

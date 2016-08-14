@@ -1,0 +1,47 @@
+﻿<Window x:Class="DyningManagementSystem.DepartmentAddViewWindow" Loaded="DepartmentAddViewWindow_OnLoaded" WindowStyle="None"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="DepartmentAddViewWindow" Height="546" Width="710">
+    <Window.Background>
+        <ImageBrush ImageSource="images\back.jpg" Stretch="Fill" />
+    </Window.Background>
+    <Grid Margin="0,0,0,4" HorizontalAlignment="Left" Width="700">
+
+        <Button Cursor="Hand"  Name="DepartmentAddButton" Click="DepartmentAddButton_OnClick"  HorizontalAlignment="Left" Margin="140,121,0,0" VerticalAlignment="Top" Width="150" Height="40">
+
+
+            <StackPanel>
+                <Image Stretch="Fill" Source="Images/AddButtonIcon.png" Margin="-4,-3,-5,-3" Height="46" Width="160"/>
+
+
+            </StackPanel>
+        </Button>
+        <TextBox Name="DepartmentNameTextBox" KeyUp="DepartmentNameTextBox_OnKeyUp" HorizontalAlignment="Left" Height="39" Margin="140,64,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="310"/>
+        <Label FontFamily="Courier New" FontWeight="Bold" Foreground="Red" Content="" Name="DepartmentNameErrorMessageLabel" HorizontalAlignment="Left" Margin="471,75,0,0" VerticalAlignment="Top" RenderTransformOrigin="3.2,0.385"/>
+        <Image Name="ErrorImage" Source="Images/exclamation_red.png" HorizontalAlignment="Left" Height="23" Margin="455,80,0,0" VerticalAlignment="Top" Width="16" RenderTransformOrigin="0.5,-2.043"/>
+        <Label Foreground="White" Content="Department Name" HorizontalAlignment="Left" Margin="26,64,0,0" VerticalAlignment="Top"/>
+        <DataGrid  AutoGenerateColumns="False" ItemsSource="{Binding}" Name="DepartmentDataGrid" HorizontalAlignment="Left" Margin="67,192,0,0" VerticalAlignment="Top" Width="580" Height="332">
+
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Department Name" Width="460" Binding="{Binding Department1}" />
+
+                <DataGridTemplateColumn Header="Delete" Width="80">
+                    <DataGridTemplateColumn.CellTemplate >
+                        <DataTemplate>
+                            <Button ToolTip="Delete" Name="SessionDeleteButton" Click="DepartmentDeleteButton_OnClick"  Background="White" Foreground="Cornsilk"  >
+
+
+                                <StackPanel Orientation="Horizontal">
+                                    <Image Source="Images/icon-delete.png" Margin="0,0,4,4" Width="12"  />
+
+
+                                </StackPanel>
+                            </Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Image Cursor="Hand" x:Name="WindowColseIcon" MouseLeave="WindowColseIcon_OnMouseLeave" MouseDown="WindowColseIcon_OnMouseDown" MouseEnter="WindowColseIcon_OnMouseEnter" Source="Images/CloseIcona.png" Stretch="Fill" HorizontalAlignment="Left" Height="40" Margin="651,0,0,484" VerticalAlignment="Bottom" Width="39" RenderTransformOrigin="-0.209,0.671"/>
+    </Grid>
+</Window>

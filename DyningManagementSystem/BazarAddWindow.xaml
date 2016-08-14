@@ -1,0 +1,125 @@
+﻿<Window x:Class="DyningManagementSystem.BazarAddWindow" Loaded="BazarAddWindow_OnLoaded" WindowStyle="None"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="BazarAddWindow" Height="861.821" Width="826.358">
+    <Window.Background>
+        <ImageBrush ImageSource="images\back.jpg" Stretch="Fill" />
+    </Window.Background>
+    <Grid Margin="0,0,28,13" HorizontalAlignment="Right" Width="647">
+        <Grid Margin="-38,385,50,421" Background="Transparent" Name="BazarAddGrid" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="107*"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="287*"/>
+                <ColumnDefinition Width="333*"/>
+            </Grid.ColumnDefinitions>
+            <TextBox FontSize="18" HorizontalAlignment="Left" x:Name="BazarAddNameTextBox" KeyUp="BazarAddNameTextBox_OnKeyUp"  Height="43" Margin="215,-205,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="246" Grid.ColumnSpan="2"/>
+            <TextBox FontSize="18" HorizontalAlignment="Left" KeyUp="BazarAddTakaTextBox_OnKeyUp"  x:Name="BazarAddTakaTextBox" Height="43" Margin="214,-276,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="246" Grid.ColumnSpan="2"/>
+            <DatePicker FontSize="18" x:Name="BazarAddDatePicker" CalendarClosed="BazarAddDatePicker_OnCalendarClosed"  HorizontalAlignment="Left" Margin="215,-331,0,0" VerticalAlignment="Top" Width="246" Height="33" Grid.ColumnSpan="2"/>
+            <Button  FontSize="24" x:Name="BazarAddButton" HorizontalAlignment="Left" Margin="215,-136,0,96" VerticalAlignment="Bottom" Width="245" Height="41" Click="BazarAddButton_OnClick" Grid.ColumnSpan="2">
+
+                <StackPanel>
+                    <Image Source="Images/list_add.png" Margin="82,4,5,4" Height="20"/>
+                    <TextBlock FontSize="20" FontWeight="ExtraBold" Text="Add" Margin="11,-29,5,3" Height="32" />
+                </StackPanel>
+            </Button>
+            <Label Content="Date"  FontSize="25" HorizontalAlignment="Left" Margin="137,-340,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.403,1.116" Height="43" Width="62"/>
+            <Label Content="Name" FontSize="25" HorizontalAlignment="Left" Margin="123,-209,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.395,-0.346" Height="43" Width="76"/>
+            <Label Content="Taka" FontSize="25" HorizontalAlignment="Left" Margin="137,-279,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.105,0.115" Height="43" Width="58"/>
+            <Label FontSize="20"  FontWeight="Heavy" Foreground="Crimson" Content="Labe" x:Name="DateLabel" Grid.Column="1" HorizontalAlignment="Left" Margin="178,-331,0,0" VerticalAlignment="Top" Height="37" Width="149"/>
+            <Label FontSize="20" FontWeight="Heavy" Foreground="Crimson" Content="Label" x:Name="NameLabel" Grid.Column="1" HorizontalAlignment="Left" Margin="176,-201,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.289,0.269" Height="37" Width="151"/>
+            <Label FontSize="20" FontWeight="Heavy" Foreground="Crimson" Content="Label" x:Name="TakaLabel" Grid.Column="1" HorizontalAlignment="Left" Margin="176,-269,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.421,-0.308" Height="37" Width="162">
+                <Label.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform AngleY="2.684"/>
+                        <RotateTransform/>
+                        <TranslateTransform Y="1.224"/>
+                    </TransformGroup>
+                </Label.RenderTransform>
+            </Label>
+
+        </Grid>
+        <DataGrid VerticalContentAlignment="Center" ItemsSource="{Binding}" FontSize="20" FontFamily="Arial"  AutoGenerateColumns="False" x:Name="BazarDataGrid" HorizontalAlignment="Left" Margin="-116,54,0,0" VerticalAlignment="Top" Width="763" Height="415" SelectionChanged="BazarDataGrid_OnSelectionChanged">
+
+
+
+            <DataGrid.Columns>
+                <DataGridTextColumn FontSize="16" FontFamily="Arial"  Binding="{Binding Date}" Header="Date" x:Name="Date" Width="180"/>
+                <DataGridTextColumn FontSize="16" FontFamily="Arial" Binding="{Binding Name}" Header="Name" x:Name="Name" Width="220"/>
+                <DataGridTextColumn FontSize="16" FontFamily="Arial" Binding="{Binding Taka}" Header="Taka" x:Name="Taka" Width="160"/>
+
+                <DataGridTemplateColumn Header="Delete" Width="90">
+                    <DataGridTemplateColumn.CellTemplate >
+                        <DataTemplate>
+                            <Button  Background="#fff" ToolTip="Delete" Foreground="Cornsilk" Click="DelteButton_OnClick"  x:Name="DelteButton">
+
+                                <StackPanel Orientation="Horizontal">
+                                    <Image Source="Images/icon-delete.png" Margin="0,0,4,4" Width="16"  />
+
+                                </StackPanel>
+                            </Button>
+
+
+
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+                <DataGridTemplateColumn Header="Edit" Width="99">
+                    <DataGridTemplateColumn.CellTemplate >
+                        <DataTemplate>
+                            <Button Name="BazarEditButton"  ToolTip="Edit" Background="White" Foreground="Cornsilk"   Click="BazarEditButton_OnClick">
+
+
+                                <StackPanel Orientation="Horizontal">
+                                    <Image Source="Images/icon-edit.png" Margin="0,0,4,4" Width="16"  />
+
+                                </StackPanel>
+                            </Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+
+        </DataGrid>
+        <Label Content="Label" x:Name="LabelPageNo" HorizontalAlignment="Left" Margin="-67,385,0,0" VerticalAlignment="Top" Height="17" Width="29"/>
+        <Button  ToolTip="Next Page" x:Name="NextButton" Click="NextButton_OnClick"  HorizontalAlignment="Left" Margin="208,476,0,0" VerticalAlignment="Top" Width="29" Height="28">
+            <StackPanel Orientation="Horizontal" Width="36">
+                <Image Source="Images/1436478826_resultset_next.png" Margin="0,0,4,4" Width="26"  />
+
+            </StackPanel>
+        </Button>
+        <Button  ToolTip="Previous Page" Click="PreviousButton_OnClick"  x:Name="PreviousButton" HorizontalAlignment="Left" Margin="151,476,0,0" VerticalAlignment="Top" Width="33" Height="28">
+
+            <StackPanel Orientation="Horizontal">
+                <Image Source="Images/1436478790_resultset_previous.png" Margin="0,0,4,4" Width="26"  />
+
+            </StackPanel>
+        </Button>
+        <Button ToolTip="First Page" x:Name="FirstPageButton" Click="FirstPageButton_OnClick"  HorizontalAlignment="Left" Margin="92,474,0,0" VerticalAlignment="Top" Width="34" Height="30">
+            <StackPanel Orientation="Horizontal" Height="23" Width="21">
+                <Image Source="Images/1436386564_resultset_first.png" Margin="0,0,4,4" Width="16"  />
+
+            </StackPanel>
+        </Button>
+        <Button ToolTip="Last Page" Click="LastPageButton_OnClick"  x:Name="LastPageButton" HorizontalAlignment="Left" Margin="255,476,0,0" VerticalAlignment="Top" Width="34" Height="28" RenderTransformOrigin="-1.055,1.313">
+            <StackPanel Orientation="Horizontal" Height="23" Width="21">
+                <Image Source="Images/1436386527_resultset_last.png" Margin="0,0,4,4" Width="16"  />
+
+            </StackPanel>
+        </Button>
+        <ComboBox ToolTip="Select How many Rows You want to show" x:Name="CustomRowComboBox"  DropDownClosed="CustomRowComboBox_OnDropDownClosed"  HorizontalAlignment="Left"  Margin="392,477,0,0" VerticalAlignment="Top" Width="43" Height="28">
+            <ComboBoxItem Content="5"/>
+            <ComboBoxItem Content="10"/>
+
+        </ComboBox>
+        <TextBox x:Name="ItemTextBox" HorizontalAlignment="Left" Height="23" Margin="-85,490,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="65"/>
+        <Label Content="Label" x:Name="LabelPageNo_Copy" HorizontalAlignment="Left" Margin="-140,491,0,0" VerticalAlignment="Top" Width="33"/>
+        <Label Content="Label" x:Name="RowLabel" HorizontalAlignment="Left" Height="19" Margin="-53,534,0,0" VerticalAlignment="Top" Width="33"/>
+        <Image Cursor="Hand" x:Name="WindowColseIcon" MouseLeave="WindowColseIcon_OnMouseLeave" MouseDown="WindowColseIcon_OnMouseDown" MouseEnter="WindowColseIcon_OnMouseEnter" Source="Images/CloseIcona.png" Stretch="Fill" HorizontalAlignment="Left" Height="40" Margin="626,12,-19,0" VerticalAlignment="Top" Width="40"/>
+    </Grid>
+</Window>

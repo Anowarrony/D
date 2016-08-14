@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DyningModelStoreContainer" CdmEntityContainer="DyningManagementDbContext">
+    <EntitySetMapping Name="Bazars">
+      <EntityTypeMapping TypeName="DyningModel.Bazar">
+        <MappingFragment StoreEntitySet="Bazar">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Taka" ColumnName="Taka" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Borders">
+      <EntityTypeMapping TypeName="DyningModel.Border">
+        <MappingFragment StoreEntitySet="Border">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Department" ColumnName="Department" />
+          <ScalarProperty Name="Session" ColumnName="Session" />
+          <ScalarProperty Name="Room" ColumnName="Room" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="BorderId" ColumnName="BorderId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Departments">
+      <EntityTypeMapping TypeName="DyningModel.Department">
+        <MappingFragment StoreEntitySet="Department">
+          <ScalarProperty Name="DeptId" ColumnName="DeptId" />
+          <ScalarProperty Name="Department1" ColumnName="Department" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Floors">
+      <EntityTypeMapping TypeName="DyningModel.Floor">
+        <MappingFragment StoreEntitySet="Floor">
+          <ScalarProperty Name="FloorId" ColumnName="FloorId" />
+          <ScalarProperty Name="Floor1" ColumnName="Floor" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Logins">
+      <EntityTypeMapping TypeName="DyningModel.Login">
+        <MappingFragment StoreEntitySet="Login">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="LoginTime" ColumnName="LoginTime" />
+          <ScalarProperty Name="password" ColumnName="password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Meals">
+      <EntityTypeMapping TypeName="DyningModel.Meal">
+        <MappingFragment StoreEntitySet="Meal">
+          <ScalarProperty Name="MealId" ColumnName="MealId" />
+          <ScalarProperty Name="Meal1" ColumnName="Meal" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Payment" ColumnName="Payment" />
+          <ScalarProperty Name="BorderId" ColumnName="BorderId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Rooms">
+      <EntityTypeMapping TypeName="DyningModel.Room">
+        <MappingFragment StoreEntitySet="Room">
+          <ScalarProperty Name="RoomId" ColumnName="RoomId" />
+          <ScalarProperty Name="Room1" ColumnName="Room" />
+          <ScalarProperty Name="FloorId" ColumnName="FloorId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sessions">
+      <EntityTypeMapping TypeName="DyningModel.Session">
+        <MappingFragment StoreEntitySet="Session">
+          <ScalarProperty Name="SessionId" ColumnName="SessionId" />
+          <ScalarProperty Name="Session1" ColumnName="Session" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,107 @@
+﻿<Window x:Class="DyningManagementSystem.BorderMealSearchWindow" Loaded="BorderMealSearchWindow_OnLoaded" WindowStyle="None"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="BorderMealSearchWindow" Height="800" Width="1141.388" WindowStartupLocation="CenterScreen">
+    <Window.Background>
+        <ImageBrush ImageSource="images\back.jpg" Stretch="Fill" />
+    </Window.Background>
+    <Grid Margin="0,23,12,2">
+        <TextBox HorizontalAlignment="Left" FontSize="24" FontWeight="ExtraBold" Height="43" Margin="273,46,0,0" TextWrapping="Wrap" x:Name="SearchTextBox" VerticalAlignment="Top" Width="282"/>
+        <Label   Content="Search By ID" Foreground="White" HorizontalAlignment="Left" FontSize="25" FontWeight="Heavy" Margin="104,46,0,0" VerticalAlignment="Top"/>
+        <Label Content="Label" Visibility="Hidden"  Name="IdLabel" HorizontalAlignment="Left" Margin="915,22,0,0" VerticalAlignment="Top"/>
+
+        <DataGrid x:Name="PersonalMealInfoDataGrid" ColumnHeaderHeight="30" AutoGenerateColumns="False" ItemsSource="{Binding}" HorizontalAlignment="Left" FontSize="18" FontFamily="Arial" Margin="38,106,0,0" VerticalAlignment="Top" Width="915" Height="93">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Total Meal" Width="160" x:Name="TotalMeal" Binding="{Binding TotalMeal}" FontSize="20" FontFamily="Arial" />
+                <DataGridTextColumn Header="Total Paid Amount" Width="210" x:Name="TotaPaidAmount" Binding="{Binding TotaPaidAmount}" FontSize="20" FontFamily="Arial" />
+                <DataGridTextColumn Header="Total Coast" FontSize="20" x:Name="Totalcoast" Binding="{Binding Totalcoast}" Width="230" FontFamily="Arial" />
+                <DataGridTextColumn Header="Current Balance" FontSize="20" Width="230" x:Name="CurrentBalance" Binding="{Binding CurrentBalance}" FontFamily="Arial" />
+
+
+
+            </DataGrid.Columns>
+
+        </DataGrid>
+        <Button Cursor="Hand"  Name="BorderSearchButton" FontSize="25" FontWeight="ExtraBold" HorizontalAlignment="Left" Margin="572,46,0,0" VerticalAlignment="Top" Width="142" Height="40" Click="BorderSearchButton_OnClick">
+            <StackPanel Width="153">
+                <Image Source="Images/SearchButtonIcon.png" Height="43" Width="150" Margin="-15,-3,-4,4" Stretch="Fill" />
+
+            </StackPanel>
+
+        </Button>
+        <Image  x:Name="MemberImage" Source="{Binding}" HorizontalAlignment="Left" Height="92" Margin="966,102,0,0" VerticalAlignment="Top" Width="124" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="-1.336" />
+                    <RotateTransform/>
+                    <TranslateTransform X="1.469"/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Button Cursor="Hand"  Name="BorderDetailsButton" HorizontalAlignment="Left" Margin="734,47,0,0" VerticalAlignment="Top" Width="140" Height="40" Click="BorderDetailsButton_OnClick">
+            <StackPanel Width="153">
+                <Image Source="Images/DetailsButtonIcon.png" Height="45" Margin="-6,-3,10,4" Stretch="Fill"/>
+
+
+            </StackPanel>
+
+        </Button>
+        <DataGrid x:Name="TestDataGrid" SelectedCellsChanged="TestDataGrid_OnSelectedCellsChanged" CurrentCellChanged="TestDataGrid_OnCurrentCellChanged" ColumnHeaderHeight="30"   FontSize="18" AutoGenerateColumns="False" HorizontalAlignment="Left" Margin="39,209,0,78" Width="1062" RenderTransformOrigin="0.5,0.5">
+            <DataGrid.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="-0.457"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="-1.485"/>
+                </TransformGroup>
+            </DataGrid.RenderTransform>
+            <DataGrid.Columns>
+                <DataGridTextColumn  Header="Date" Width="290" Binding="{Binding Date}"/>
+                <DataGridTextColumn Header="Meal" Width="290" Binding="{Binding Meal1}"/>
+                <DataGridTextColumn Header="Paid Amount" Width="290" Binding="{Binding Payment}"/>
+                <DataGridTemplateColumn Header="Delete" Width="80">
+                    <DataGridTemplateColumn.CellTemplate >
+                        <DataTemplate>
+
+                            <Button  x:Name="DeleteButton" Click="DeleteButton_OnClick"  ToolTip="Delete" >
+                                <StackPanel Orientation="Horizontal" Width="36" Height="17">
+                                    <Image Source="Images/icon-delete.png" Margin="0,0,0,0" Width="26"  />
+
+                                </StackPanel>
+
+
+                            </Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+                <DataGridTemplateColumn Header="Edit" Width="80">
+                    <DataGridTemplateColumn.CellTemplate >
+                        <DataTemplate>
+                            <Button  x:Name="EditButton" Click="EditButton_OnClick" ToolTip="Edit" >
+
+                                <StackPanel Orientation="Horizontal" Width="36" Height="17">
+                                    <Image Source="Images/icon-edit.png" Margin="0,0,0,0" Width="26"  />
+
+                                </StackPanel>
+
+                            </Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+
+        </DataGrid>
+
+        <Button ToolTip="Delete Multiple Rows by just selecting rows" x:Name="BorderMealInfoDeleteButton" Click="BorderMealInfoDeleteButton_OnClick" HorizontalAlignment="Left" Height="46" Margin="528,692,0,0" VerticalAlignment="Top" Width="56">
+
+            <StackPanel Orientation="Horizontal" Width="36" Height="17">
+                <Image Source="Images/icon-delete.png" Margin="0,0,0,0" Width="26"  />
+
+            </StackPanel>
+        </Button>
+        <Image Cursor="Hand" x:Name="WindowCloseIconImage" MouseDown="WindowCloseIconImage_OnMouseDown" MouseLeave="WindowCloseIconImage_OnMouseLeave" MouseEnter="WindowCloseIconImage_OnMouseEnter" Stretch="Fill" HorizontalAlignment="Left" Height="40" Margin="1070,0,0,0" VerticalAlignment="Top" Width="40" Source="Images/CloseIcona.png" RenderTransformOrigin="3.305,2.2"/>
+
+    </Grid>
+</Window>

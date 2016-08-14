@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DyningModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="DyningManagementDbContext" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="Bazars" EntityType="DyningModel.Bazar" />
+    <EntitySet Name="Borders" EntityType="DyningModel.Border" />
+    <EntitySet Name="Departments" EntityType="DyningModel.Department" />
+    <EntitySet Name="Floors" EntityType="DyningModel.Floor" />
+    <EntitySet Name="Logins" EntityType="DyningModel.Login" />
+    <EntitySet Name="Meals" EntityType="DyningModel.Meal" />
+    <EntitySet Name="Rooms" EntityType="DyningModel.Room" />
+    <EntitySet Name="Sessions" EntityType="DyningModel.Session" />
+  </EntityContainer>
+  <EntityType Name="Bazar">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Date" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Taka" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Border">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Department" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Session" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Room" Type="Int32" Nullable="false" />
+    <Property Name="Image" Type="Binary" Nullable="false" MaxLength="Max" FixedLength="false" />
+    <Property Name="BorderId" Type="String" Nullable="false" MaxLength="60" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Department">
+    <Key>
+      <PropertyRef Name="DeptId" />
+    </Key>
+    <Property Name="DeptId" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Department1" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Floor">
+    <Key>
+      <PropertyRef Name="FloorId" />
+    </Key>
+    <Property Name="FloorId" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Floor1" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Login">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="LoginTime" Type="DateTime" Precision="3" />
+    <Property Name="password" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Meal">
+    <Key>
+      <PropertyRef Name="MealId" />
+    </Key>
+    <Property Name="MealId" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Meal1" Type="Double" />
+    <Property Name="Date" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Payment" Type="Int32" />
+    <Property Name="BorderId" Type="String" MaxLength="59" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Room">
+    <Key>
+      <PropertyRef Name="RoomId" />
+    </Key>
+    <Property Name="RoomId" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Room1" Type="Int32" Nullable="false" />
+    <Property Name="FloorId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Session">
+    <Key>
+      <PropertyRef Name="SessionId" />
+    </Key>
+    <Property Name="SessionId" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Session1" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+  </EntityType>
+</Schema>

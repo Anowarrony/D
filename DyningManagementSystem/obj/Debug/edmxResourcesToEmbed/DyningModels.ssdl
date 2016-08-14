@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DyningModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2005" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="DyningModelStoreContainer">
+    <EntitySet Name="Bazar" EntityType="DyningModel.Store.Bazar" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Border" EntityType="DyningModel.Store.Border" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Department" EntityType="DyningModel.Store.Department" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Floor" EntityType="DyningModel.Store.Floor" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Login" EntityType="DyningModel.Store.Login" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Meal" EntityType="DyningModel.Store.Meal" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Room" EntityType="DyningModel.Store.Room" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Session" EntityType="DyningModel.Store.Session" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="Bazar">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Date" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Taka" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Border">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Department" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Session" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Room" Type="int" Nullable="false" />
+    <Property Name="Image" Type="image" Nullable="false" />
+    <Property Name="BorderId" Type="varchar" Nullable="false" MaxLength="60" />
+  </EntityType>
+  <EntityType Name="Department">
+    <Key>
+      <PropertyRef Name="DeptId" />
+    </Key>
+    <Property Name="DeptId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Department" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Floor">
+    <Key>
+      <PropertyRef Name="FloorId" />
+    </Key>
+    <Property Name="FloorId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Floor" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Login">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="LoginTime" Type="datetime" />
+    <Property Name="password" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Meal">
+    <Key>
+      <PropertyRef Name="MealId" />
+    </Key>
+    <Property Name="MealId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Meal" Type="float" />
+    <Property Name="Date" Type="nvarchar" MaxLength="50" />
+    <Property Name="Payment" Type="int" />
+    <Property Name="BorderId" Type="varchar" MaxLength="59" />
+  </EntityType>
+  <EntityType Name="Room">
+    <Key>
+      <PropertyRef Name="RoomId" />
+    </Key>
+    <Property Name="RoomId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Room" Type="int" Nullable="false" />
+    <Property Name="FloorId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Session">
+    <Key>
+      <PropertyRef Name="SessionId" />
+    </Key>
+    <Property Name="SessionId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Session" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+</Schema>

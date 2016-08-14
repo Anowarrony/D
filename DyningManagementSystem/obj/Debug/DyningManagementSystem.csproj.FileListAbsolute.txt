@@ -1,0 +1,181 @@
+C:\Users\anowar\Documents\Visual Studio 2012\Projects\DyningManagementSystem\DyningManagementSystem\bin\Debug\DyningManagementSystem.exe.config
+C:\Users\anowar\Documents\Visual Studio 2012\Projects\DyningManagementSystem\DyningManagementSystem\bin\Debug\DyningManagementSystem.exe
+C:\Users\anowar\Documents\Visual Studio 2012\Projects\DyningManagementSystem\DyningManagementSystem\bin\Debug\DyningManagementSystem.pdb
+C:\Users\anowar\Documents\Visual Studio 2012\Projects\DyningManagementSystem\DyningManagementSystem\bin\Debug\EntityFramework.dll
+C:\Users\anowar\Documents\Visual Studio 2012\Projects\DyningManagementSystem\DyningManagementSystem\bin\Debug\EntityFramework.xml
+C:\Users\anowar\Documents\Visual Studio 2012\Projects\DyningManagementSystem\DyningManagementSystem\obj\Debug\DyningManagementSystem.csprojResolveAssemblyReference.cache
+C:\Users\anowar\Documents\Visual Studio 2012\Projects\DyningManagementSystem\DyningManagementSystem\obj\Debug\MealAddWindow.baml
+C:\Users\anowar\Documents\Visual Studio 2012\Projects\DyningManagementSystem\DyningManagementSystem\obj\Debug\MealAddWindow.g.cs
+C:\Users\anowar\Documents\Visual Studio 2012\Projects\DyningManagementSystem\DyningManagementSystem\obj\Debug\App.g.cs
+C:\Users\anowar\Documents\Visual Studio 2012\Projects\DyningManagementSystem\DyningManagementSystem\obj\Debug\DyningManagementSystem_MarkupCompile.cache
+C:\Users\anowar\Documents\Visual Studio 2012\Projects\DyningManagementSystem\DyningManagementSystem\obj\Debug\DyningManagementSystem.g.resources
+C:\Users\anowar\Documents\Visual Studio 2012\Projects\DyningManagementSystem\DyningManagementSystem\obj\Debug\DyningManagementSystem.Properties.Resources.resources
+C:\Users\anowar\Documents\Visual Studio 2012\Projects\DyningManagementSystem\DyningManagementSystem\obj\Debug\DyningManagementSystem.csproj.GenerateResource.Cache
+C:\Users\anowar\Documents\Visual Studio 2012\Projects\DyningManagementSystem\DyningManagementSystem\obj\Debug\DyningManagementSystem.exe
+C:\Users\anowar\Documents\Visual Studio 2012\Projects\DyningManagementSystem\DyningManagementSystem\obj\Debug\DyningManagementSystem.pdb
+C:\Users\anowar\Documents\Visual Studio 2012\Projects\DyningManagementSystem\DyningManagementSystem\obj\Debug\BorderRegistrationWindow.baml
+C:\Users\anowar\Documents\Visual Studio 2012\Projects\DyningManagementSystem\DyningManagementSystem\obj\Debug\BorderRegistrationWindow.g.cs
+C:\Users\anowar\Documents\Visual Studio 2012\Projects\DyningManagementSystem\DyningManagementSystem\obj\Debug\BazarAddWindow.baml
+C:\Users\anowar\Documents\Visual Studio 2012\Projects\DyningManagementSystem\DyningManagementSystem\obj\Debug\BazarAddWindow.g.cs
+C:\Users\anowar\Documents\Visual Studio 2012\Projects\DyningManagementSystem\DyningManagementSystem\obj\Debug\BazarUpdateWindow.baml
+C:\Users\anowar\Documents\Visual Studio 2012\Projects\DyningManagementSystem\DyningManagementSystem\obj\Debug\BazarUpdateWindow.g.cs
+C:\Users\anowar\Documents\Visual Studio 2012\Projects\DyningManagementSystem\DyningManagementSystem\obj\Debug\HomeWindow.baml
+C:\Users\anowar\Documents\Visual Studio 2012\Projects\DyningManagementSystem\DyningManagementSystem\obj\Debug\HomeWindow.g.cs
+C:\Users\anowar\Documents\Visual Studio 2012\Projects\DyningManagementSystem\DyningManagementSystem\obj\Debug\MealInformationWindow.baml
+C:\Users\anowar\Documents\Visual Studio 2012\Projects\DyningManagementSystem\DyningManagementSystem\obj\Debug\MealInformationWindow.g.cs
+C:\Users\anowar\Documents\Visual Studio 2012\Projects\DyningManagementSystem\DyningManagementSystem\obj\Debug\BorderMealSearchWindow.baml
+C:\Users\anowar\Documents\Visual Studio 2012\Projects\DyningManagementSystem\DyningManagementSystem\obj\Debug\BorderMealSearchWindow.g.cs
+C:\Users\anowar\Documents\Visual Studio 2012\Projects\DyningManagementSystem\DyningManagementSystem\obj\Debug\BorderMealsUpdateWindow.baml
+C:\Users\anowar\Documents\Visual Studio 2012\Projects\DyningManagementSystem\DyningManagementSystem\obj\Debug\BorderMealsUpdateWindow.g.cs
+C:\Users\anowar\Documents\Visual Studio 2012\Projects\DyningManagementSystem\DyningManagementSystem\obj\Debug\DepartmentAddViewWindow.baml
+C:\Users\anowar\Documents\Visual Studio 2012\Projects\DyningManagementSystem\DyningManagementSystem\obj\Debug\DepartmentAddViewWindow.g.cs
+C:\Users\anowar\Documents\Visual Studio 2012\Projects\DyningManagementSystem\DyningManagementSystem\obj\Debug\SessionAddViewWindow.baml
+C:\Users\anowar\Documents\Visual Studio 2012\Projects\DyningManagementSystem\DyningManagementSystem\obj\Debug\SessionAddViewWindow.g.cs
+C:\Users\anowar\Documents\Visual Studio 2012\Projects\DyningManagementSystem\DyningManagementSystem\obj\Debug\LoginWindow.baml
+C:\Users\anowar\Documents\Visual Studio 2012\Projects\DyningManagementSystem\DyningManagementSystem\obj\Debug\LoginWindow.g.cs
+C:\Users\anowar\Desktop\LibraryManagementSystem\Dyning Management Software\DyningManagementSystem\bin\Debug\DyningManagementSystem.exe.config
+C:\Users\anowar\Desktop\LibraryManagementSystem\Dyning Management Software\DyningManagementSystem\obj\Debug\DyningManagementSystem.exe
+C:\Users\anowar\Desktop\LibraryManagementSystem\Dyning Management Software\DyningManagementSystem\obj\Debug\DyningManagementSystem.pdb
+C:\Users\anowar\Desktop\LibraryManagementSystem\Dyning Management Software\DyningManagementSystem\bin\Debug\DyningManagementSystem.exe
+C:\Users\anowar\Desktop\LibraryManagementSystem\Dyning Management Software\DyningManagementSystem\bin\Debug\DyningManagementSystem.pdb
+C:\Users\anowar\Desktop\LibraryManagementSystem\Dyning Management Software\DyningManagementSystem\bin\Debug\EntityFramework.dll
+C:\Users\anowar\Desktop\LibraryManagementSystem\Dyning Management Software\DyningManagementSystem\bin\Debug\EntityFramework.xml
+C:\Users\anowar\Desktop\LibraryManagementSystem\Dyning Management Software\DyningManagementSystem\obj\Debug\DyningManagementSystem.csprojResolveAssemblyReference.cache
+C:\Users\anowar\Desktop\LibraryManagementSystem\Dyning Management Software\DyningManagementSystem\obj\Debug\BazarAddWindow.baml
+C:\Users\anowar\Desktop\LibraryManagementSystem\Dyning Management Software\DyningManagementSystem\obj\Debug\BazarUpdateWindow.baml
+C:\Users\anowar\Desktop\LibraryManagementSystem\Dyning Management Software\DyningManagementSystem\obj\Debug\BorderMealSearchWindow.baml
+C:\Users\anowar\Desktop\LibraryManagementSystem\Dyning Management Software\DyningManagementSystem\obj\Debug\BorderMealsUpdateWindow.baml
+C:\Users\anowar\Desktop\LibraryManagementSystem\Dyning Management Software\DyningManagementSystem\obj\Debug\BorderRegistrationWindow.baml
+C:\Users\anowar\Desktop\LibraryManagementSystem\Dyning Management Software\DyningManagementSystem\obj\Debug\DepartmentAddViewWindow.baml
+C:\Users\anowar\Desktop\LibraryManagementSystem\Dyning Management Software\DyningManagementSystem\obj\Debug\HomeWindow.baml
+C:\Users\anowar\Desktop\LibraryManagementSystem\Dyning Management Software\DyningManagementSystem\obj\Debug\LoginWindow.baml
+C:\Users\anowar\Desktop\LibraryManagementSystem\Dyning Management Software\DyningManagementSystem\obj\Debug\MealAddWindow.baml
+C:\Users\anowar\Desktop\LibraryManagementSystem\Dyning Management Software\DyningManagementSystem\obj\Debug\MealInformationWindow.baml
+C:\Users\anowar\Desktop\LibraryManagementSystem\Dyning Management Software\DyningManagementSystem\obj\Debug\SessionAddViewWindow.baml
+C:\Users\anowar\Desktop\LibraryManagementSystem\Dyning Management Software\DyningManagementSystem\obj\Debug\BazarAddWindow.g.cs
+C:\Users\anowar\Desktop\LibraryManagementSystem\Dyning Management Software\DyningManagementSystem\obj\Debug\BazarUpdateWindow.g.cs
+C:\Users\anowar\Desktop\LibraryManagementSystem\Dyning Management Software\DyningManagementSystem\obj\Debug\BorderMealSearchWindow.g.cs
+C:\Users\anowar\Desktop\LibraryManagementSystem\Dyning Management Software\DyningManagementSystem\obj\Debug\BorderMealsUpdateWindow.g.cs
+C:\Users\anowar\Desktop\LibraryManagementSystem\Dyning Management Software\DyningManagementSystem\obj\Debug\BorderRegistrationWindow.g.cs
+C:\Users\anowar\Desktop\LibraryManagementSystem\Dyning Management Software\DyningManagementSystem\obj\Debug\DepartmentAddViewWindow.g.cs
+C:\Users\anowar\Desktop\LibraryManagementSystem\Dyning Management Software\DyningManagementSystem\obj\Debug\HomeWindow.g.cs
+C:\Users\anowar\Desktop\LibraryManagementSystem\Dyning Management Software\DyningManagementSystem\obj\Debug\LoginWindow.g.cs
+C:\Users\anowar\Desktop\LibraryManagementSystem\Dyning Management Software\DyningManagementSystem\obj\Debug\MealAddWindow.g.cs
+C:\Users\anowar\Desktop\LibraryManagementSystem\Dyning Management Software\DyningManagementSystem\obj\Debug\MealInformationWindow.g.cs
+C:\Users\anowar\Desktop\LibraryManagementSystem\Dyning Management Software\DyningManagementSystem\obj\Debug\SessionAddViewWindow.g.cs
+C:\Users\anowar\Desktop\LibraryManagementSystem\Dyning Management Software\DyningManagementSystem\obj\Debug\App.g.cs
+C:\Users\anowar\Desktop\LibraryManagementSystem\Dyning Management Software\DyningManagementSystem\obj\Debug\DyningManagementSystem_MarkupCompile.cache
+C:\Users\anowar\Desktop\LibraryManagementSystem\Dyning Management Software\DyningManagementSystem\obj\Debug\DyningManagementSystem.g.resources
+C:\Users\anowar\Desktop\LibraryManagementSystem\Dyning Management Software\DyningManagementSystem\obj\Debug\DyningManagementSystem.Properties.Resources.resources
+C:\Users\anowar\Desktop\LibraryManagementSystem\Dyning Management Software\DyningManagementSystem\obj\Debug\DyningManagementSystem.csproj.GenerateResource.Cache
+D:\Special Code By Anowar\Alamin\OkProjects\DyningManagement-master\DyningManagementSystem\bin\Debug\DyningManagementSystem.exe.config
+D:\Special Code By Anowar\Alamin\OkProjects\DyningManagement-master\DyningManagementSystem\obj\Debug\DyningManagementSystem.exe
+D:\Special Code By Anowar\Alamin\OkProjects\DyningManagement-master\DyningManagementSystem\obj\Debug\DyningManagementSystem.pdb
+D:\Special Code By Anowar\Alamin\OkProjects\DyningManagement-master\DyningManagementSystem\bin\Debug\DyningManagementSystem.exe
+D:\Special Code By Anowar\Alamin\OkProjects\DyningManagement-master\DyningManagementSystem\bin\Debug\DyningManagementSystem.pdb
+D:\Special Code By Anowar\Alamin\OkProjects\DyningManagement-master\DyningManagementSystem\bin\Debug\EntityFramework.dll
+D:\Special Code By Anowar\Alamin\OkProjects\DyningManagement-master\DyningManagementSystem\bin\Debug\EntityFramework.xml
+D:\Special Code By Anowar\Alamin\OkProjects\DyningManagement-master\DyningManagementSystem\obj\Debug\DyningManagementSystem.csprojResolveAssemblyReference.cache
+D:\Special Code By Anowar\Alamin\OkProjects\DyningManagement-master\DyningManagementSystem\obj\Debug\BazarAddWindow.baml
+D:\Special Code By Anowar\Alamin\OkProjects\DyningManagement-master\DyningManagementSystem\obj\Debug\BazarUpdateWindow.baml
+D:\Special Code By Anowar\Alamin\OkProjects\DyningManagement-master\DyningManagementSystem\obj\Debug\BorderMealSearchWindow.baml
+D:\Special Code By Anowar\Alamin\OkProjects\DyningManagement-master\DyningManagementSystem\obj\Debug\BorderMealsUpdateWindow.baml
+D:\Special Code By Anowar\Alamin\OkProjects\DyningManagement-master\DyningManagementSystem\obj\Debug\BorderRegistrationWindow.baml
+D:\Special Code By Anowar\Alamin\OkProjects\DyningManagement-master\DyningManagementSystem\obj\Debug\DepartmentAddViewWindow.baml
+D:\Special Code By Anowar\Alamin\OkProjects\DyningManagement-master\DyningManagementSystem\obj\Debug\HomeWindow.baml
+D:\Special Code By Anowar\Alamin\OkProjects\DyningManagement-master\DyningManagementSystem\obj\Debug\LoginWindow.baml
+D:\Special Code By Anowar\Alamin\OkProjects\DyningManagement-master\DyningManagementSystem\obj\Debug\MealAddWindow.baml
+D:\Special Code By Anowar\Alamin\OkProjects\DyningManagement-master\DyningManagementSystem\obj\Debug\MealInformationWindow.baml
+D:\Special Code By Anowar\Alamin\OkProjects\DyningManagement-master\DyningManagementSystem\obj\Debug\SessionAddViewWindow.baml
+D:\Special Code By Anowar\Alamin\OkProjects\DyningManagement-master\DyningManagementSystem\obj\Debug\BazarAddWindow.g.cs
+D:\Special Code By Anowar\Alamin\OkProjects\DyningManagement-master\DyningManagementSystem\obj\Debug\BazarUpdateWindow.g.cs
+D:\Special Code By Anowar\Alamin\OkProjects\DyningManagement-master\DyningManagementSystem\obj\Debug\BorderMealSearchWindow.g.cs
+D:\Special Code By Anowar\Alamin\OkProjects\DyningManagement-master\DyningManagementSystem\obj\Debug\BorderMealsUpdateWindow.g.cs
+D:\Special Code By Anowar\Alamin\OkProjects\DyningManagement-master\DyningManagementSystem\obj\Debug\BorderRegistrationWindow.g.cs
+D:\Special Code By Anowar\Alamin\OkProjects\DyningManagement-master\DyningManagementSystem\obj\Debug\DepartmentAddViewWindow.g.cs
+D:\Special Code By Anowar\Alamin\OkProjects\DyningManagement-master\DyningManagementSystem\obj\Debug\HomeWindow.g.cs
+D:\Special Code By Anowar\Alamin\OkProjects\DyningManagement-master\DyningManagementSystem\obj\Debug\LoginWindow.g.cs
+D:\Special Code By Anowar\Alamin\OkProjects\DyningManagement-master\DyningManagementSystem\obj\Debug\MealAddWindow.g.cs
+D:\Special Code By Anowar\Alamin\OkProjects\DyningManagement-master\DyningManagementSystem\obj\Debug\MealInformationWindow.g.cs
+D:\Special Code By Anowar\Alamin\OkProjects\DyningManagement-master\DyningManagementSystem\obj\Debug\SessionAddViewWindow.g.cs
+D:\Special Code By Anowar\Alamin\OkProjects\DyningManagement-master\DyningManagementSystem\obj\Debug\App.g.cs
+D:\Special Code By Anowar\Alamin\OkProjects\DyningManagement-master\DyningManagementSystem\obj\Debug\DyningManagementSystem_MarkupCompile.cache
+D:\Special Code By Anowar\Alamin\OkProjects\DyningManagement-master\DyningManagementSystem\obj\Debug\DyningManagementSystem.g.resources
+D:\Special Code By Anowar\Alamin\OkProjects\DyningManagement-master\DyningManagementSystem\obj\Debug\DyningManagementSystem.Properties.Resources.resources
+D:\Special Code By Anowar\Alamin\OkProjects\DyningManagement-master\DyningManagementSystem\obj\Debug\DyningManagementSystem.csproj.GenerateResource.Cache
+C:\Users\PC\Desktop\DepartmentAutomation\DyningManagementSystem\bin\Debug\DyningManagementSystem.exe.config
+C:\Users\PC\Desktop\DepartmentAutomation\DyningManagementSystem\obj\Debug\DyningManagementSystem.exe
+C:\Users\PC\Desktop\DepartmentAutomation\DyningManagementSystem\obj\Debug\DyningManagementSystem.pdb
+C:\Users\PC\Desktop\DyningManagement\DyningManagementSystem\bin\Debug\DyningManagementSystem.exe.config
+C:\Users\PC\Desktop\DyningManagement\DyningManagementSystem\obj\Debug\DyningManagementSystem.exe
+C:\Users\PC\Desktop\DyningManagement\DyningManagementSystem\obj\Debug\DyningManagementSystem.pdb
+C:\Users\Rony\Desktop\DyningManagement-master\DyningManagement-master\DyningManagementSystem\bin\Debug\DyningManagementSystem.exe.config
+C:\Users\Rony\Desktop\DyningManagement-master\DyningManagement-master\DyningManagementSystem\obj\Debug\DyningManagementSystem.exe
+C:\Users\Rony\Desktop\DyningManagement-master\DyningManagement-master\DyningManagementSystem\obj\Debug\DyningManagementSystem.pdb
+C:\Users\Rony\Desktop\DyningManagement-master\DyningManagement-master\DyningManagementSystem\bin\Debug\DyningManagementSystem.exe
+C:\Users\Rony\Desktop\DyningManagement-master\DyningManagement-master\DyningManagementSystem\bin\Debug\DyningManagementSystem.pdb
+C:\Users\Rony\Desktop\DyningManagement-master\DyningManagement-master\DyningManagementSystem\bin\Debug\EntityFramework.dll
+C:\Users\Rony\Desktop\DyningManagement-master\DyningManagement-master\DyningManagementSystem\bin\Debug\EntityFramework.xml
+C:\Users\Rony\Desktop\DyningManagement-master\DyningManagement-master\DyningManagementSystem\obj\Debug\DyningManagementSystem.csprojResolveAssemblyReference.cache
+C:\Users\Rony\Desktop\DyningManagement-master\DyningManagement-master\DyningManagementSystem\obj\Debug\BazarAddWindow.baml
+C:\Users\Rony\Desktop\DyningManagement-master\DyningManagement-master\DyningManagementSystem\obj\Debug\BazarUpdateWindow.baml
+C:\Users\Rony\Desktop\DyningManagement-master\DyningManagement-master\DyningManagementSystem\obj\Debug\BorderMealSearchWindow.baml
+C:\Users\Rony\Desktop\DyningManagement-master\DyningManagement-master\DyningManagementSystem\obj\Debug\BorderMealsUpdateWindow.baml
+C:\Users\Rony\Desktop\DyningManagement-master\DyningManagement-master\DyningManagementSystem\obj\Debug\BorderRegistrationWindow.baml
+C:\Users\Rony\Desktop\DyningManagement-master\DyningManagement-master\DyningManagementSystem\obj\Debug\DepartmentAddViewWindow.baml
+C:\Users\Rony\Desktop\DyningManagement-master\DyningManagement-master\DyningManagementSystem\obj\Debug\HomeWindow.baml
+C:\Users\Rony\Desktop\DyningManagement-master\DyningManagement-master\DyningManagementSystem\obj\Debug\LoginWindow.baml
+C:\Users\Rony\Desktop\DyningManagement-master\DyningManagement-master\DyningManagementSystem\obj\Debug\MealAddWindow.baml
+C:\Users\Rony\Desktop\DyningManagement-master\DyningManagement-master\DyningManagementSystem\obj\Debug\MealInformationWindow.baml
+C:\Users\Rony\Desktop\DyningManagement-master\DyningManagement-master\DyningManagementSystem\obj\Debug\SessionAddViewWindow.baml
+C:\Users\Rony\Desktop\DyningManagement-master\DyningManagement-master\DyningManagementSystem\obj\Debug\BazarAddWindow.g.cs
+C:\Users\Rony\Desktop\DyningManagement-master\DyningManagement-master\DyningManagementSystem\obj\Debug\BazarUpdateWindow.g.cs
+C:\Users\Rony\Desktop\DyningManagement-master\DyningManagement-master\DyningManagementSystem\obj\Debug\BorderMealSearchWindow.g.cs
+C:\Users\Rony\Desktop\DyningManagement-master\DyningManagement-master\DyningManagementSystem\obj\Debug\BorderMealsUpdateWindow.g.cs
+C:\Users\Rony\Desktop\DyningManagement-master\DyningManagement-master\DyningManagementSystem\obj\Debug\BorderRegistrationWindow.g.cs
+C:\Users\Rony\Desktop\DyningManagement-master\DyningManagement-master\DyningManagementSystem\obj\Debug\DepartmentAddViewWindow.g.cs
+C:\Users\Rony\Desktop\DyningManagement-master\DyningManagement-master\DyningManagementSystem\obj\Debug\HomeWindow.g.cs
+C:\Users\Rony\Desktop\DyningManagement-master\DyningManagement-master\DyningManagementSystem\obj\Debug\LoginWindow.g.cs
+C:\Users\Rony\Desktop\DyningManagement-master\DyningManagement-master\DyningManagementSystem\obj\Debug\MealAddWindow.g.cs
+C:\Users\Rony\Desktop\DyningManagement-master\DyningManagement-master\DyningManagementSystem\obj\Debug\MealInformationWindow.g.cs
+C:\Users\Rony\Desktop\DyningManagement-master\DyningManagement-master\DyningManagementSystem\obj\Debug\SessionAddViewWindow.g.cs
+C:\Users\Rony\Desktop\DyningManagement-master\DyningManagement-master\DyningManagementSystem\obj\Debug\App.g.cs
+C:\Users\Rony\Desktop\DyningManagement-master\DyningManagement-master\DyningManagementSystem\obj\Debug\DyningManagementSystem_MarkupCompile.cache
+C:\Users\Rony\Desktop\DyningManagement-master\DyningManagement-master\DyningManagementSystem\obj\Debug\DyningManagementSystem.g.resources
+C:\Users\Rony\Desktop\DyningManagement-master\DyningManagement-master\DyningManagementSystem\obj\Debug\DyningManagementSystem.Properties.Resources.resources
+C:\Users\Rony\Desktop\DyningManagement-master\DyningManagement-master\DyningManagementSystem\obj\Debug\DyningManagementSystem.csproj.GenerateResource.Cache
+E:\DyningManagement-master\DyningManagement-master\DyningManagementSystem\bin\Debug\DyningManagementSystem.exe.config
+E:\DyningManagement-master\DyningManagement-master\DyningManagementSystem\obj\Debug\DyningManagementSystem.exe
+E:\DyningManagement-master\DyningManagement-master\DyningManagementSystem\obj\Debug\DyningManagementSystem.pdb
+E:\DyningManagement-master\DyningManagement-master\DyningManagementSystem\bin\Debug\DyningManagementSystem.exe
+E:\DyningManagement-master\DyningManagement-master\DyningManagementSystem\bin\Debug\DyningManagementSystem.pdb
+E:\DyningManagement-master\DyningManagement-master\DyningManagementSystem\bin\Debug\EntityFramework.dll
+E:\DyningManagement-master\DyningManagement-master\DyningManagementSystem\bin\Debug\EntityFramework.xml
+E:\DyningManagement-master\DyningManagement-master\DyningManagementSystem\obj\Debug\DyningManagementSystem.csprojResolveAssemblyReference.cache
+E:\DyningManagement-master\DyningManagement-master\DyningManagementSystem\obj\Debug\BazarAddWindow.baml
+E:\DyningManagement-master\DyningManagement-master\DyningManagementSystem\obj\Debug\BazarUpdateWindow.baml
+E:\DyningManagement-master\DyningManagement-master\DyningManagementSystem\obj\Debug\BorderMealSearchWindow.baml
+E:\DyningManagement-master\DyningManagement-master\DyningManagementSystem\obj\Debug\BorderMealsUpdateWindow.baml
+E:\DyningManagement-master\DyningManagement-master\DyningManagementSystem\obj\Debug\BorderRegistrationWindow.baml
+E:\DyningManagement-master\DyningManagement-master\DyningManagementSystem\obj\Debug\DepartmentAddViewWindow.baml
+E:\DyningManagement-master\DyningManagement-master\DyningManagementSystem\obj\Debug\HomeWindow.baml
+E:\DyningManagement-master\DyningManagement-master\DyningManagementSystem\obj\Debug\LoginWindow.baml
+E:\DyningManagement-master\DyningManagement-master\DyningManagementSystem\obj\Debug\MealAddWindow.baml
+E:\DyningManagement-master\DyningManagement-master\DyningManagementSystem\obj\Debug\MealInformationWindow.baml
+E:\DyningManagement-master\DyningManagement-master\DyningManagementSystem\obj\Debug\SessionAddViewWindow.baml
+E:\DyningManagement-master\DyningManagement-master\DyningManagementSystem\obj\Debug\BazarAddWindow.g.cs
+E:\DyningManagement-master\DyningManagement-master\DyningManagementSystem\obj\Debug\BazarUpdateWindow.g.cs
+E:\DyningManagement-master\DyningManagement-master\DyningManagementSystem\obj\Debug\BorderMealSearchWindow.g.cs
+E:\DyningManagement-master\DyningManagement-master\DyningManagementSystem\obj\Debug\BorderMealsUpdateWindow.g.cs
+E:\DyningManagement-master\DyningManagement-master\DyningManagementSystem\obj\Debug\BorderRegistrationWindow.g.cs
+E:\DyningManagement-master\DyningManagement-master\DyningManagementSystem\obj\Debug\DepartmentAddViewWindow.g.cs
+E:\DyningManagement-master\DyningManagement-master\DyningManagementSystem\obj\Debug\HomeWindow.g.cs
+E:\DyningManagement-master\DyningManagement-master\DyningManagementSystem\obj\Debug\LoginWindow.g.cs
+E:\DyningManagement-master\DyningManagement-master\DyningManagementSystem\obj\Debug\MealAddWindow.g.cs
+E:\DyningManagement-master\DyningManagement-master\DyningManagementSystem\obj\Debug\MealInformationWindow.g.cs
+E:\DyningManagement-master\DyningManagement-master\DyningManagementSystem\obj\Debug\SessionAddViewWindow.g.cs
+E:\DyningManagement-master\DyningManagement-master\DyningManagementSystem\obj\Debug\App.g.cs
+E:\DyningManagement-master\DyningManagement-master\DyningManagementSystem\obj\Debug\DyningManagementSystem_MarkupCompile.cache
+E:\DyningManagement-master\DyningManagement-master\DyningManagementSystem\obj\Debug\DyningManagementSystem.g.resources
+E:\DyningManagement-master\DyningManagement-master\DyningManagementSystem\obj\Debug\DyningManagementSystem.Properties.Resources.resources
+E:\DyningManagement-master\DyningManagement-master\DyningManagementSystem\obj\Debug\DyningManagementSystem.csproj.GenerateResource.Cache
